@@ -23,7 +23,12 @@ describe('', () => {
 
   test('If guess does not exist in answer, add guess to guessWrong array', () => {
     reusableGame.checkAddGuess("x");
-    expect(reusableGame.guessWrong).toBe(["x"]);
+    expect(reusableGame.guessWrong).toEqual(["x"]);
+  })
+
+  test('If solve guess is equal to the answer, reveal hidden answer', () => {
+    reusableGame.checkAddSolve("string");
+    expect(reusableGame.answerHidden).toBe("s t r i n g");
   })
 
 })

@@ -18,7 +18,20 @@ export class Game{
       }
       this.answerHidden = answerHiddenArray.join(" ");
     } else {
-      //this.guessWrong.push(guess)
+      this.guessWrong.push(guess)
+    }
+  }
+
+  checkAddSolve(solve){
+    if (this.answer === solve){
+      let answerArray = this.answer.split("");
+      let answerHiddenArray = [];
+      for(let i=0; i < answerArray.length; i++){
+        answerHiddenArray.push(answerArray[i]);
+      }
+      this.answerHidden = answerHiddenArray.join(" ");
+    } else {
+      this.guessWrong.push(solve)
     }
   }
 }
