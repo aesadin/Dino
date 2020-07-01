@@ -6,11 +6,13 @@
 
 ## Description
 
-_Long deiscription._
+_Long description._
 
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
+| Create constructor class with answer to the puzzle and an array with wrong guesses.  |||
+||||
 
 
 ## Setup/Installation Requirements
