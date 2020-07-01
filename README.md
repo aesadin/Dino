@@ -1,8 +1,8 @@
-# _PROJECT NAME_
+# _Boulder Cat_
 
-#### _SHORT DESCR_
+#### _Less-tone-deaf hangman with a boulder and a cat_
 
-#### By _**YOUR NAME HERE**_
+#### By _**Allison Sadin, Teresa Rosinski, Tyson Lackey**_
 
 ## Description
 
@@ -11,8 +11,12 @@ _Long description._
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-| Create constructor class with answer to the puzzle and an array with wrong guesses.  |||
-||||
+| should create class with answer property and wrong guess property  |||
+| created class should have a property of hidden answer that converts string values to underscores |||
+| If guess exists in answer update answerHidden so that underscore at that hidden letter reveals the hidden letter |||
+| If guess does not exist in answer, add guess to guessWrong array |||
+| If solve guess is equal to the answer, reveal hidden answer |||
+| If solve guess is not equal to the answer, add guess to guessWrong array |||
 
 
 ## Setup/Installation Requirements
