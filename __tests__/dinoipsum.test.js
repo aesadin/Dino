@@ -31,4 +31,9 @@ describe('', () => {
     expect(reusableGame.answerHidden).toBe("s t r i n g");
   })
 
+  test('If solve guess is not equal to the answer, add guess to guessWrong array', () => {
+    reusableGame.checkAddSolve("blah");
+    expect(reusableGame.guessWrong).toEqual(["blah"]);
+  })
+
 })
