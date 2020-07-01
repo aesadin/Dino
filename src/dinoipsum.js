@@ -1,6 +1,6 @@
 export class Game{
   constructor(answer){
-    //this.answer = answer
-    //this.guessWrong = []
+    this.answer = answer
+    this.guessWrong = []
   }
 }
